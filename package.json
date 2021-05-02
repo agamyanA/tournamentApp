@@ -1,0 +1,14 @@
+{
+  "name": "tournamentapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  },
+  "scripts": {
+    "scss": "sass --watch  app/scss/style.scss:app/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
