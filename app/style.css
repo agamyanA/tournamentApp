@@ -11,30 +11,42 @@ span {
   display: block;
 }
 
-.bracket {
-  max-width: 100vw;
+.container {
+  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  align-items: center;
+  grid-template-rows: 80% 20%;
+}
+
+.bracket {
+  display: grid;
+  width: 80vw;
+  grid-template-columns: 50% 50%;
 }
 .bracket__side {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 25% 25% 25% 25%;
 }
 .bracket__column {
   display: grid;
-  width: 3rem;
-  gap: 50px;
+  justify-content: center;
+  width: 50%;
+  row-gap: 3rem;
 }
 
 .match {
   display: grid;
   align-items: center;
-  gap: 10px;
+  row-gap: 1rem;
 }
 
 .team-block {
   width: 100px;
   border: 1px solid red;
+}
+.grid-end {
+  justify-items: end;
 }
 
 /*# sourceMappingURL=style.css.map */
