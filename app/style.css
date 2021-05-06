@@ -5,6 +5,7 @@ body {
   overflow-x: hidden;
   position: relative;
   display: block;
+  font-family: "Courier New", Courier, monospace;
 }
 
 span {
@@ -12,27 +13,29 @@ span {
 }
 
 .container {
-  height: 100vh;
+  margin-top: 3rem;
+  width: 100vw;
   display: grid;
   place-items: center;
   align-items: center;
-  grid-template-rows: 80% 20%;
 }
 
 .bracket {
   display: grid;
-  width: 80vw;
   grid-template-columns: 50% 50%;
+  column-gap: 1.2rem;
+  width: 80vw;
 }
 .bracket__side {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 0.575rem;
 }
 .bracket__column {
   display: grid;
   justify-content: center;
-  width: 50%;
-  row-gap: 3rem;
+  width: 25%;
+  row-gap: 2.5rem;
 }
 
 .match {
@@ -42,11 +45,64 @@ span {
 }
 
 .team {
-  width: 100px;
-  border: 1px solid red;
+  width: clamp(40px, 10vw, 150px);
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border: 2px solid #7597d1;
+  background-color: #ebd1d1;
+  border-radius: 5px;
 }
+.team__name {
+  font-size: clamp(0.3rem, 1.7vw, 75%);
+  font-weight: bold;
+}
+.team__score {
+  margin-top: 0.575rem;
+}
+
 .grid-end {
-  justify-items: end;
+  justify-items: center;
+}
+
+.btn {
+  width: 7rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  transition: 100ms ease-in-out;
+}
+.btn:hover {
+  border: 2px solid black;
+}
+
+.control {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn-green {
+  background-color: #7ec87e;
+}
+
+.btn-red {
+  background-color: #c87e8e;
+}
+
+#winner {
+  padding-bottom: 2rem;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #7ec8a4;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 95vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,7 @@
 package-lock.json
 node_modules
 style.css.map
+.firebaserc
+firebase.json
+.firebase/hosting.YXBw.cache
+app/icon.png
